@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html{
+  font-size: 62.5%;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.color-wheel {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid transparent;
+}
+
+.color-slice {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  clip-path: polygon(50% 50%, 50% 0, 92% 0);
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+  transform: rotate(0deg);
+}
+
+.red-orange {
+  background-color: orangered;
+  transform: rotate(40deg);
+}
+
+.orange {
+  background-color: orange;
+  transform: rotate(80deg);
+}
+
+.yellow {
+  background-color: yellow;
+  transform: rotate(120deg);
+}
+
+.yellow-green {
+  background-color: yellowgreen;
+  transform: rotate(160deg);
+}
+
+.green {
+  background-color: green;
+  transform: rotate(200deg);
+}
+
+.blue {
+  background-color: blue;
+  transform: rotate(240deg);
+}
+
+.blue-violet{
+  background-color: blueviolet;
+  transform: rotate(280deg);
+}
+
+.violet {
+  background-color: violet;
+  transform: rotate(320deg);
+}
